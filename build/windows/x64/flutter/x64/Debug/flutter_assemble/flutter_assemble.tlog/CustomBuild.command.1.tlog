@@ -1,0 +1,28 @@
+^D:\PETPRJS\ROUTINE\BUILD\WINDOWS\X64\CMAKEFILES\824309F77E0547E6D58DCDB35CCC26E6\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\myFlutter\flutter PROJECT_DIR=D:\petPrjs\routine FLUTTER_ROOT=C:\myFlutter\flutter FLUTTER_EPHEMERAL_DIR=D:\petPrjs\routine\windows\flutter\ephemeral PROJECT_DIR=D:\petPrjs\routine FLUTTER_TARGET=D:\petPrjs\routine\lib\main.dart DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=D:\petPrjs\routine\.dart_tool\package_config.json C:/myFlutter/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PETPRJS\ROUTINE\BUILD\WINDOWS\X64\CMAKEFILES\F80B3DD868F72DB7979C56B3EB1319B8\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PETPRJS\ROUTINE\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/petPrjs/routine/windows -BD:/petPrjs/routine/build/windows/x64 --check-stamp-file D:/petPrjs/routine/build/windows/x64/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
